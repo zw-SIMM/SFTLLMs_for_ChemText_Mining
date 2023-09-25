@@ -1,0 +1,1 @@
+# SFTChatGPT_for_chemtext_mining

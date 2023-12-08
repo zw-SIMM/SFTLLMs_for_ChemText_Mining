@@ -22,7 +22,7 @@ Preprocessed data have been placed in corresponding folders:
 pip install openai
 pip install pandas
 ```
-Note: The fine-tuning code has been slightly different as the version of openai has been updated to v1.0.0+.
+Note: The fine-tuning code has been slightly different as the version of openai updated to v1.0.0+.
 
 Here, we provide the latest code.
 

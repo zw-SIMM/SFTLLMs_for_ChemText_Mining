@@ -5,7 +5,7 @@ Preprocessed data have been placed in corresponding folders:
 
 - ```Paragraph2Comound/```
 
-- ```Paragraph2RXNRole/prod```/ and ```Paragraph2RXNRole/role/```
+- ```Paragraph2RXNRole/prod/``` and ```Paragraph2RXNRole/role/```
 
 - ```Paragraph2MOFInfo/```
 
@@ -31,11 +31,9 @@ Specific scripts  for each task are in the corresponding folders.
 Here, we gave an example notebook of fine-tuning ChatGPT on 25 Paragraph2NMR data in ```demo/SFTChatGPT_for_ChemText_Mining.ipynb```, including:
 
  - Preprocessing
-
  - Training
-
  - Inferencing
-
+ - evaluating
 
 ## Language Model Baselines
 

@@ -26,10 +26,6 @@ Note: The fine-tuning code has been slightly different as the version of openai 
 
 Here, we provide the latest code.
 
-Before 2023.11.06, we set model = "gpt-3.5-turbo-0613"
-
-After 2023.11.06, we can set model = "gpt-3.5-turbo-1106" (recommend)
-
 ### Implementation
 
 Specific scripts  for each task are in the corresponding folders.

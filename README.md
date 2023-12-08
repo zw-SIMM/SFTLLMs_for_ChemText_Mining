@@ -28,12 +28,12 @@ Specific scripts  for each task are in the corresponding folders.
 
 ####  Demo of Finetuning-ChatGPT on small data
 
-Here, we gave an example notebook of fine-tuning ChatGPT on 25 Paragraph2NMR data in ```demo/SFTChatGPT_for_ChemText_Mining.ipynb```, including:
+Here, we gave an example notebook of fine-tuning ChatGPT on 25 Paragraph2NMR data in ```demo/demo_of_fine-tuning_chatgpt_on_paragraph2NMR.ipynb```, including:
 
  - Preprocessing
  - Training
  - Inferencing
- - evaluating
+ - Evaluating
 
 ## Language Model Baselines
 

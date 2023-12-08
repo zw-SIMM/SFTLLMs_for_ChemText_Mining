@@ -1,4 +1,5 @@
 # SFTChatGPT_for_chemtext_mining
+
 ## Datasets
 
 Preprocessed data have been placed in corresponding folders:
@@ -21,6 +22,13 @@ Preprocessed data have been placed in corresponding folders:
 pip install openai
 pip install pandas
 ```
+Note: The fine-tuning code has been slightly different as the version of openai has been updated to v1.0.0+.
+
+Here, we provide the latest code.
+
+Before 2023.11.06, we set model = "gpt-3.5-turbo-0613"
+
+After 2023.11.06, we can set model = "gpt-3.5-turbo-1106" (recommend)
 
 ### Implementation
 

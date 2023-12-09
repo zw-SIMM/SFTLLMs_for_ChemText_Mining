@@ -1,5 +1,11 @@
 # SFTChatGPT_for_chemtext_mining
 
+## Download
+```bash
+git clone https://github.com/zw-SIMM/SFTChatGPT_for_chemtext_mining
+cd SFTChatGPT_for_chemtext_mining
+```
+
 ## Datasets
 
 Preprocessed data have been placed in corresponding folders:

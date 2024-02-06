@@ -1,4 +1,4 @@
-# SFTChatGPT_for_chemtext_mining
+# SFTLLMs_for_ChemText_Mining
 
 ## Download
 ```bash

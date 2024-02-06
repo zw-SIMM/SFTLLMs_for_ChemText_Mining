@@ -2,7 +2,7 @@
 
 ## Download
 ```bash
-git clone https://github.com/zw-SIMM/SFTChatGPT_for_chemtext_mining
+git clone https://github.com/zw-SIMM/SFTLLMs_for_chemtext_mining
 cd SFTChatGPT_for_chemtext_mining
 ```
 

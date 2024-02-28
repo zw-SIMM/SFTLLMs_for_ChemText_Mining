@@ -45,9 +45,11 @@ Here, we gave an example notebook of fine-tuning ChatGPT on 25 Paragraph2NMR dat
  - Inferencing
  - Evaluating
 
+All notebooks of fine-tuning and prompt engineering LLMs (GPT-4, GPT-3.5) as well as evaluating for each task will be released soon...
+
 ## Language Model Baselines
 
 ### Environment (Linux)
 
-Codes will be released soon ...
+Finetuning codes including ChatGPT (GPT-3.5-Turbo), llama2, bart, and t5 will be released soon ...
 

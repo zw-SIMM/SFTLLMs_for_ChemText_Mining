@@ -38,7 +38,7 @@ Specific scripts  for each task are in the corresponding folders.
 
 All notebooks of fine-tuning and prompt engineering LLMs (GPT-4, GPT-3.5) as well as evaluating for each task will be released soon...
 
-####  Demo of Finetuning-ChatGPT on small data
+###  Demo of Finetuning-ChatGPT on small data
 
 Here, we gave an example notebook of fine-tuning ChatGPT on 25 Paragraph2NMR data in ```demo/fine-tuning_chatgpt_on_25_paragraph2NMR_data.ipynb```, including:
 

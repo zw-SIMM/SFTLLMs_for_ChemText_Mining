@@ -35,6 +35,7 @@ Here, we provide the latest code.
 ### Implementation
 
 Specific scripts  for each task are in the corresponding folders.
+All notebooks of fine-tuning and prompt engineering LLMs (GPT-4, GPT-3.5) as well as evaluating for each task will be released soon...
 
 ####  Demo of Finetuning-ChatGPT on small data
 
@@ -44,8 +45,6 @@ Here, we gave an example notebook of fine-tuning ChatGPT on 25 Paragraph2NMR dat
  - Training
  - Inferencing
  - Evaluating
-
-All notebooks of fine-tuning and prompt engineering LLMs (GPT-4, GPT-3.5) as well as evaluating for each task will be released soon...
 
 ## Language Model Baselines
 

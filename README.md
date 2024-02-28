@@ -36,7 +36,7 @@ Here, we provide the latest code.
 
 Specific scripts  for each task are in the corresponding folders.
 
-All notebooks of fine-tuning and prompt engineering LLMs (GPT-4, GPT-3.5) as well as evaluating for each task will be released soon...
+All notebooks of fine-tuning and prompt engineering GPTs (GPT-4, GPT-3.5) as well as evaluating for each task will be released soon...
 
 ###  Demo of Finetuning-ChatGPT on small data
 
@@ -47,9 +47,9 @@ Here, we gave an example notebook of fine-tuning ChatGPT on 25 Paragraph2NMR dat
  - Inferencing
  - Evaluating
 
-## Language Model Baselines
+## Fine-tuning Open-source Language Model Baselines
 
 ### Environment (Linux)
 
-Finetuning codes including ChatGPT (GPT-3.5-Turbo), llama2, bart, and t5 will be released soon ...
+Finetuning codes including llama2, bart, and t5 will be released soon ...
 

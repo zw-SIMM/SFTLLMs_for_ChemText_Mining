@@ -8,7 +8,7 @@ cd SFTLLMs_for_chemtext_mining
 
 ## 🖊 Datasets and Codes
 
-Preprocessed data and fine-tuning codes have been placed in corresponding folders:
+Preprocessed data， fine-tuning codes， README workflows have been placed in corresponding folders:
 
 - ```Paragraph2Comound/```
 

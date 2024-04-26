@@ -1,0 +1,39 @@
+# Paragraph2Compound 100000 Dataset (too large)
+Paragraph2Comound/data/train/trial_1/train_100000.csv
+Paragraph2Comound/data/train/trial_2/train_100000.csv
+Paragraph2Comound/data/train/trial_3/train_100000.csv
+
+# Paragraph2Action Whole Dataset (pistachio license needed)
+Paragraph2Action/data/hand_annotated/*.txt
+Paragraph2Action/data/processed_data/*.csv
+Paragraph2Action/data/processed_data/*.jsonl
+
+# Saved Models
+*/saved_models
+*/*/saved_models
+
+# Predicted results
+*/results/*.csv
+*/results/*.ipynb
+*/results/*.png
+*/results/*.svg
+*/results/*.txt
+*/results/predictions/*
+*/*/results/*.csv
+*/*/results/*.ipynb
+*/*/results/*.png
+*/*/results/*.svg
+*/*/results/*.txt
+*/*/results/predictions/*
+
+# Test Files
+*/*wqg*
+*/*zw*
+*/*copy*
+*/*/*wqg*
+*/*/*zw*
+*/*/*copy*
+*/*log*
+*/*/*log*
+*/*/*svg*
+*/*/*/*svg*

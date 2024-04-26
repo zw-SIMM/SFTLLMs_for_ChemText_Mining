@@ -1,0 +1,1 @@
+The whole ```hand_annotated``` paragraph2action dataset is available upon request (pistachio license needed),  sourced from https://github.com/rxn4chemistry/paragraph2actions/tree/main/test_data

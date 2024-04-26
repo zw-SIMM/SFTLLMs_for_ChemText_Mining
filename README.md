@@ -3,7 +3,7 @@
 ## Download
 ```bash
 git clone https://github.com/zw-SIMM/SFTLLMs_for_chemtext_mining
-cd SFTChatGPT_for_chemtext_mining
+cd SFTLLMs_for_chemtext_mining
 ```
 
 ## Datasets
@@ -20,7 +20,7 @@ Preprocessed data have been placed in corresponding folders:
 
 - ```Paragraph2Action/``` dataset is derived from pistachio dataset, which is available upon request.
 
-## Finetuning-ChatGPT
+## Fine-tuning ChatGPT (GPT-3.5-Turbo)
 
 ### Environment (OS: Windows or Linux)
 
@@ -38,7 +38,7 @@ Specific scripts  for each task are in the corresponding folders.
 
 All notebooks of fine-tuning and prompt engineering GPTs (GPT-4, GPT-3.5) as well as evaluating for each task will be released soon...
 
-###  Demo of Finetuning-ChatGPT on small data
+###  Demo of Fine-tuning ChatGPT on small dataset
 
 Here, we gave an example notebook of fine-tuning ChatGPT on 25 Paragraph2NMR data in ```demo/fine-tuning_chatgpt_on_25_paragraph2NMR_data.ipynb```, including:
 
@@ -47,9 +47,33 @@ Here, we gave an example notebook of fine-tuning ChatGPT on 25 Paragraph2NMR dat
  - Inferencing
  - Evaluating
 
-## Fine-tuning Open-source Language Model Baselines
+## Fine-tuning Open-source Language Models (Llama3, Llama2, Mistral, Bart, T5) 
 
 ### Environment (Linux)
+```bash
+mamba create -n llm python=3.10
+mamba activate llm 
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pandas 
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple torch==2.1.2 numpy transformers==4.38.2 datasets tiktoken wandb tqdm
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple openpyxl
+pip install -U -i https://pypi.tuna.tsinghua.edu.cn/simple peft==0.8.0 accelerate bitsandbytes safetensors
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple jsonlines
+pip install -U -i https://pypi.tuna.tsinghua.edu.cn/simple vllm==0.4
+pip install -U -i https://pypi.tuna.tsinghua.edu.cn/simple trl==0.7
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple tensorboardX
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple tensorboard
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple textdistance
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple nltk
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple matplotlib
+pip install -U -i https://pypi.tuna.tsinghua.edu.cn/simple ipywidgets
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple seaborn
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple seqeval
+```
 
-Finetuning codes including llama2, bart, and t5 will be released soon ...
+### Pretrained Models
 
+Open-sourced pretrained models (Llama3, Llama2, Mistral, Bart, T5) can be downloaded from [huggingface](https://huggingface.co/models) or [modelscope](https://www.modelscope.cn/models).
+
+### Fine-tuning
+
+The codes and tutorials of Fine-tuning Language models (ChatGPT, Llama3, Llama2, Mistral, Bart, T5) for each task are in the corresponding folders.

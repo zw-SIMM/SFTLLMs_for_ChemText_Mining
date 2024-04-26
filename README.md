@@ -47,8 +47,7 @@ Here, we gave an example notebook of fine-tuning ChatGPT on 25 Paragraph2NMR dat
  - Inferencing
  - Evaluating
 
-## 📀Fine-tuning Open-source Language Models 
-## 📀(Llama3, Llama2, Mistral, Bart, T5) 
+## 📀Fine-tuning Open-source Language Models (Mistral, Llama3, Bart, T5) 
 
 ### Environment (Linux)
 ```bash

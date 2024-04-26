@@ -18,7 +18,7 @@ Preprocessed data and fine-tuning codes have been placed in corresponding folder
 
 - ```Paragraph2NMR/```
 
-- ```Paragraph2Action/``` dataset is derived from pistachio dataset, which is available upon request.
+- ```Paragraph2Action/``` (dataset is derived from pistachio dataset, which is available upon request.)
 
 ## Fine-tuning ChatGPT (GPT-3.5-Turbo) and Prompt-Engineering GPT-4
 

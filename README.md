@@ -6,7 +6,7 @@ git clone https://github.com/zw-SIMM/SFTLLMs_for_chemtext_mining
 cd SFTLLMs_for_chemtext_mining
 ```
 
-## Datasets and Codes
+## 🖊 Datasets and Codes
 
 Preprocessed data and fine-tuning codes have been placed in corresponding folders:
 
@@ -20,7 +20,7 @@ Preprocessed data and fine-tuning codes have been placed in corresponding folder
 
 - ```Paragraph2Action/``` (dataset is derived from pistachio dataset, which is available upon request.)
 
-## Fine-tuning ChatGPT (GPT-3.5-Turbo) and Prompt-Engineering GPT-4
+## 💿Fine-tuning ChatGPT (GPT-3.5-Turbo) and Prompt-Engineering GPT-4
 
 ### Environment (OS: Windows or Linux)
 
@@ -47,8 +47,8 @@ Here, we gave an example notebook of fine-tuning ChatGPT on 25 Paragraph2NMR dat
  - Inferencing
  - Evaluating
 
-## Fine-tuning Open-source Language Models 
-## (Llama3, Llama2, Mistral, Bart, T5) 
+## 📀Fine-tuning Open-source Language Models 
+## 📀(Llama3, Llama2, Mistral, Bart, T5) 
 
 ### Environment (Linux)
 ```bash

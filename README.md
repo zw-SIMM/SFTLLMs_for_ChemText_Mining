@@ -36,7 +36,7 @@ Here, we provide the latest code.
 
 Specific scripts  for each task are in the corresponding folders.
 
-All notebooks of fine-tuning and prompt engineering GPTs (GPT-4, GPT-3.5) as well as evaluating for each task will be released soon...
+All notebooks of fine-tuning and prompt engineering GPTs (GPT-4, GPT-3.5) as well as evaluating for each task has beed released!
 
 ###  Demo of Fine-tuning ChatGPT on small dataset
 

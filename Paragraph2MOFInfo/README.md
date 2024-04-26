@@ -2,7 +2,9 @@
 
 - Data for fine-tuning LLMs are in ```data/data_for_llms```.
 
-- Data for fine-tuning bart or T5 are in ```data/data_for_bart_or_t5```. (preprocessed beacuse the 512 length limitation, split into 11 prefix tasks )
+- Data for fine-tuning bart or T5 are in ```data/data_for_bart_or_t5```. 
+
+(preprocessed beacuse the 512 length limitation, split into 11 prefix tasks )
 
 ## 2. Methods for Paragraph2MOFInfo
 
@@ -16,7 +18,7 @@ See in ```finetune_chatgpt_for_paragraph2MOFInfo.ipynb```
 
 ### Full Parameter Fine-tuning Open-source Large Language Models (Mistral, Llama3, Llama2)
 
-Training Code in ```finetune_llms_full_for_paragraph2MOFInfo.py``
+Training Code in ```finetune_llms_full_for_paragraph2MOFInfo.py```
 
 Inferencing Code in ```vllm_inference_full_finetuned_llms.ipynb```
 
@@ -28,7 +30,7 @@ Inferencing Code in ```vllm_inference_peft_finetuned_llms.ipynb```
 
 ### Fine-tuning Language Models (T5, Bart)
 
-See in ```finetune_bart_or_t5_for_paragraph2MOFInfo.py``
+See in ```finetune_bart_or_t5_for_paragraph2MOFInfo.py```
 
 ## 3. Evaluating the results of Paragraph2MOFInfo
 

@@ -19,19 +19,19 @@ See in ```finetune_chatgpt_for_paragraph2compound.ipynb```
 
 ### Full Parameter Fine-tuning Open-source Large Language Models (Mistral, Llama3, Llama2)
 
-Training Code in ```finetune_llms_full_for_paragraph2compound.py``
+Training Code in ```finetune_llms_full_for_paragraph2compound.py```
 
 Inferencing Code in ```vllm_inference_full_finetuned_llms.ipynb```
 
 ### Parameter Efficient Fine-tuning (PEFT) Open-source Large Language Models (Mistral, Llama3, Llama2)
 
-Training Code in ```finetune_llms_peft_for_paragraph2compound.py``
+Training Code in ```finetune_llms_peft_for_paragraph2compound.py```
 
 Inferencing Code in ```vllm_inference_peft_finetuned_llms.ipynb```
 
 ### Fine-tuning Language Models (T5, Bart)
 
-See in ```finetune_bart_or_t5_for_paragraph2compound.py``
+See in ```finetune_bart_or_t5_for_paragraph2compound.py```
 
 ## 3. Evaluating the results of Paragraph2Comound
 

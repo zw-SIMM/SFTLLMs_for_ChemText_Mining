@@ -59,7 +59,7 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple torch==2.1.2 numpy trans
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple openpyxl
 pip install -U -i https://pypi.tuna.tsinghua.edu.cn/simple peft==0.8.0 accelerate bitsandbytes safetensors
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple jsonlines
-pip install -U -i https://pypi.tuna.tsinghua.edu.cn/simple vllm==0.4
+pip install -U -i https://pypi.tuna.tsinghua.edu.cn/simple vllm==0.3.1
 pip install -U -i https://pypi.tuna.tsinghua.edu.cn/simple trl==0.7
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple tensorboardX
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple tensorboard

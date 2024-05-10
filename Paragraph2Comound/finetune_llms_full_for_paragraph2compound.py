@@ -56,13 +56,13 @@ warmup_ratio = 0.03                 # Ratio of steps for a linear warmup (from 0
 group_by_length = True              # Group sequences into batches with same length (Saves memory and speeds up training considerably)
 
 # SFT parameters
-max_seq_length = 4096               # Maximum sequence length to use (default 1024)
+max_seq_length = 2048               # Maximum sequence length to use (default 1024)
 packing = False                     # Pack multiple short examples in the same input sequence to increase efficiency
 device_map = "auto"                 # Load the entire model on the GPU 0, or "auto"
 
 # Model Version (Meta-Llama-3-8B-Instruct, Mistral-7B-Instruct-v0.2, llama-2-13b-chat-hf ...)
-model_name = "/home/zhangwei/pretrained_models/Mistral-7B-Instruct-v0.2"  # Path of the pretrained model downloaded from Hugging Face
-new_model_dir = f"saved_models/Mistral-7B-Instruct-v0.2/trial_{num_of_train_trial}_train_{len(train_df)}_lr{learning_rate}_bs{per_device_train_batch_size}"  # Fine-tuned model name
+model_name = "/home/zhangwei/pretrained_models/Meta-Llama-3-8B-Instruct"  # Path of the pretrained model downloaded from Hugging Face
+new_model_dir = f"saved_models/Meta-Llama-3-8B-Instruct/trial_{num_of_train_trial}_train_{len(train_df)}_lr{learning_rate}_bs{per_device_train_batch_size}"  # Fine-tuned model name
 output_dir = new_model_dir          # Output directory where the model predictions and checkpoints will be stored
 
 # Load base model

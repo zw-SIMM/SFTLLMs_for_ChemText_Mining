@@ -1,6 +1,6 @@
 # Finetuning Bart or T5
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 import pandas as pd 
 import numpy as np
 import torch
@@ -25,13 +25,13 @@ class CFG:
     save_strategy = "epoch"
     evaluation_strategy = "epoch"
     interval_eval_epoch = 1                               # the number of interval epochs to evaluate (inference)
-    model_name = "t5-base"                                # "bart-base" or "t5-base"
+    model_name = "bart-base"                                # "bart-base" or "t5-base"
     pretrained_dir = "/home/zhangwei/pretrained_models/"  # Path of the pretrained model downloaded from Hugging Face
     saved_models_dir = f"saved_models/{model_name}/hand_annotated_train_augmented_unique_{model_name}_lr_{learning_rate}_epoch_{num_train_epochs}_bs_{batch_size}_intervel_{interval_eval_epoch}/"
     output_dir = f"results/predictions/{saved_models_dir}"
 
     # Data Configuration
-    train_file = "data/processed_data/hand_annotated_train_augmented_unique.csv"
+    train_file = "data/processed_data/hand_annotated_train_augmented_unique.csv" # "hand_annotated_train.csv" or "hand_annotated_train_augmented_unique.csv"
     test_file = "data/processed_data/hand_annotated_test.csv"
     source_text_column = "paragraphs"
     target_text_column = "actions"

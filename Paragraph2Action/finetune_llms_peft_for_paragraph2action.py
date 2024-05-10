@@ -1,5 +1,5 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 import torch
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 
@@ -12,7 +12,7 @@ from trl import SFTTrainer
 from transformers import TrainerCallback
 
 # Data Loading and Preprocessing
-train_df = pd.read_csv("data/processed_data/hand_annotated_train.csv")
+train_df = pd.read_csv("data/processed_data/hand_annotated_train_augmented_unique.csv") # "hand_annotated_train.csv" or "hand_annotated_train_augmented_unique.csv"
 test_df = pd.read_csv("data/processed_data/hand_annotated_test.csv")
 source_text = "paragraphs"
 target_text = "actions"
@@ -53,7 +53,7 @@ gradient_accumulation_steps = 1     # Number of update steps to accumulate the g
 gradient_checkpointing = True       # Enable gradient checkpointing
 
 max_grad_norm = 0.3                 # Maximum gradient normal (gradient clipping)
-learning_rate = 1e-5                # Initial learning rate (AdamW optimizer)
+learning_rate = 1e-4                # Initial learning rate (AdamW optimizer)
 weight_decay = 0.001                # Weight decay to apply to all layers except bias/LayerNorm weights
 
 optim = "paged_adamw_32bit"         # Optimizer to use

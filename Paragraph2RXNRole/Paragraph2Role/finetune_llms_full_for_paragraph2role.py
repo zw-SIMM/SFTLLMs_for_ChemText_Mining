@@ -1,6 +1,6 @@
 import os
 # Setup environment (full fine-tuning 7b needs 160GB Memory)
-os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,6,7"
+os.environ["CUDA_VISIBLE_DEVICES"] = "4,5,6,7"
 
 import torch
 import pandas as pd

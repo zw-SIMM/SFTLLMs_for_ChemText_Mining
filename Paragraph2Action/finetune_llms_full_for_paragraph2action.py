@@ -1,6 +1,6 @@
 import os
 # Setup environment (full fine-tuning 7b needs 160GB Memory)
-os.environ["CUDA_VISIBLE_DEVICES"] = "4,5,6,7"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
 
 import torch
 import pandas as pd
@@ -12,7 +12,7 @@ from trl import SFTTrainer
 from transformers import TrainerCallback
 
 # Data Loading and Preprocessing
-train_df = pd.read_csv("data/processed_data/hand_annotated_train.csv")    # "hand_annotated_train.csv" or "hand_annotated_train_augmented_unique.csv"
+train_df = pd.read_csv("data/processed_data/hand_annotated_train_augmented_unique.csv")    # "hand_annotated_train.csv" or "hand_annotated_train_augmented_unique.csv"
 test_df = pd.read_csv("data/processed_data/hand_annotated_test.csv")
 source_text = "paragraphs"
 target_text = "actions"
@@ -39,7 +39,7 @@ gradient_accumulation_steps = 1     # Number of update steps to accumulate the g
 gradient_checkpointing = True       # Enable gradient checkpointing
 
 max_grad_norm = 0.3                 # Maximum gradient normal (gradient clipping)
-learning_rate = 1e-5                # Initial learning rate (AdamW optimizer, 1e-5 or 5e-6 or 1e-4)
+learning_rate = 1e-6                # Initial learning rate (AdamW optimizer, 1e-5 or 5e-6 or 1e-4)
 weight_decay = 0.001                # Weight decay to apply to all layers except bias/LayerNorm weights
 
 optim = "paged_adamw_32bit"         # Optimizer to use

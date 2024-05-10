@@ -1,6 +1,6 @@
 # Finetuning Bart or T5
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 import pandas as pd 
 import numpy as np
 import torch
@@ -19,13 +19,13 @@ class CFG:
     save_total_limit = 50
     batch_size = 8
     learning_rate = 1e-5                                  # 1e-4 or 1e-5
-    max_input_length = 1024
-    max_target_length = 1024
+    max_input_length = 512
+    max_target_length = 512
     weight_decay = 0.01
     save_strategy = "epoch"
     evaluation_strategy = "epoch"
     interval_eval_epoch = 1                               # the number of interval epochs to evaluate (inference)
-    model_name = "t5-base"                                # "bart-base" or "t5-base"
+    model_name = "bart-base"                                # "bart-base" or "t5-base"
     task_name = "paragraph2prod"
     pretrained_dir = "/home/zhangwei/pretrained_models/"  # Path of the pretrained model downloaded from Hugging Face
     saved_models_dir = f"saved_models/{model_name}/{model_name}_lr_{learning_rate}_epoch_{num_train_epochs}_bs_{batch_size}_intervel_{interval_eval_epoch}/"

@@ -1,6 +1,6 @@
 import os
 # Setup environment (full fine-tuning 7b needs 160GB Memory)
-os.environ["CUDA_VISIBLE_DEVICES"] = "4,5,6,7"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
 
 import torch
 import pandas as pd
@@ -70,7 +70,7 @@ device_map = "auto"                 # Load the entire model on the GPU 0, or "au
 
 # Model Version (Meta-Llama-3-8B-Instruct, Mistral-7B-Instruct-v0.2, llama-2-13b-chat-hf ...)
 model_name = "/home/zhangwei/pretrained_models/Mistral-7B-Instruct-v0.2"  # Path of the pretrained model downloaded from Hugging Face
-new_model_dir = f"saved_models/Mistral-7B-Instruct-v0.2train_{len(train_df)}_without_prompt_lr{learning_rate}_bs{per_device_train_batch_size}"  # Fine-tuned model name
+new_model_dir = f"saved_models/Mistral-7B-Instruct-v0.2/train_{len(train_df)}_without_prompt_lr{learning_rate}_bs{per_device_train_batch_size}"  # Fine-tuned model name
 output_dir = new_model_dir          # Output directory where the model predictions and checkpoints will be stored
 
 # Load base model

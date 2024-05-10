@@ -1,6 +1,6 @@
 # Finetuning Bart or T5
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "4"
+os.environ["CUDA_VISIBLE_DEVICES"] = "5"
 import pandas as pd 
 import numpy as np
 import torch
@@ -31,8 +31,8 @@ class CFG:
     output_dir = f"results/predictions/{saved_models_dir}"
 
     # Data Configuration
-    train_file = "data/data_for_bart_or_t5/t5_bart_train_200_one_column_lstrip_add_space.csv"
-    test_file = "data/data_for_bart_or_t5/t5_bart_test_300_one_column_lstrip_add_space.csv"
+    train_file = "data/data_for_bart_or_t5/train_200_one_column_lstrip_add_space.csv"
+    test_file = "data/data_for_bart_or_t5/test_300_one_column_lstrip_add_space.csv"
     source_text_column = "Paragraph"
     target_text_column = "output"
 

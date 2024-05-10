@@ -53,26 +53,26 @@ Here, we gave an example notebook of fine-tuning ChatGPT on 25 Paragraph2NMR dat
 ```bash
 mamba create -n llm python=3.10
 mamba activate llm 
-pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pandas 
-pip install -i https://pypi.tuna.tsinghua.edu.cn/simple torch==2.1.2 numpy transformers==4.38.2 datasets tiktoken wandb tqdm
-pip install -i https://pypi.tuna.tsinghua.edu.cn/simple openpyxl
-pip install -U -i https://pypi.tuna.tsinghua.edu.cn/simple peft==0.8.0 accelerate bitsandbytes safetensors
-pip install -i https://pypi.tuna.tsinghua.edu.cn/simple jsonlines
-pip install -U -i https://pypi.tuna.tsinghua.edu.cn/simple vllm==0.3.1
-pip install -U -i https://pypi.tuna.tsinghua.edu.cn/simple trl==0.7
-pip install -i https://pypi.tuna.tsinghua.edu.cn/simple tensorboardX
-pip install -i https://pypi.tuna.tsinghua.edu.cn/simple tensorboard
-pip install -i https://pypi.tuna.tsinghua.edu.cn/simple textdistance
-pip install -i https://pypi.tuna.tsinghua.edu.cn/simple nltk
-pip install -i https://pypi.tuna.tsinghua.edu.cn/simple matplotlib
-pip install -U -i https://pypi.tuna.tsinghua.edu.cn/simple ipywidgets
-pip install -i https://pypi.tuna.tsinghua.edu.cn/simple seaborn
-pip install -i https://pypi.tuna.tsinghua.edu.cn/simple seqeval
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pandas numpy ipywidgets tqdm
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple torch==2.1.2  transformers==4.38.2 datasets tiktoken wandb==0.11 openpyxl
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple peft==0.8.0 accelerate bitsandbytes safetensors jsonlines
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple vllm==0.3.1
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple trl==0.7
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple tensorboardX tensorboard
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple textdistance nltk matplotlib seaborn seqeval
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple modelscope
 ```
 
 ### Pretrained Models Downloads
 
 Open-sourced pretrained models (Llama3, Llama2, Mistral, Bart, T5) can be downloaded from [huggingface](https://huggingface.co/models) or [modelscope](https://www.modelscope.cn/models).
+
+Here is an example for downloading pretrained models by scripts on linux servers from modelscope:
+```python
+from modelscope import snapshot_download
+model_dir = snapshot_download("LLM-Research/Meta-Llama-3-8B-Instruct", revision='master', cache_dir='/home/pretrained_models')
+model_dir = snapshot_download('AI-ModelScope/Mistral-7B-Instruct-v0.2', revision='master', cache_dir='/home/pretrained_models')
+```
 
 ### Fine-tuning
 

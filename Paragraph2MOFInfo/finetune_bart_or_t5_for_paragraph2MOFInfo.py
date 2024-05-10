@@ -1,6 +1,6 @@
 # Finetuning Bart or T5
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 import pandas as pd 
 import numpy as np
 import torch

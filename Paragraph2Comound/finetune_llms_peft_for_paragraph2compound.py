@@ -1,5 +1,5 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 import torch
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 
@@ -13,7 +13,7 @@ from transformers import TrainerCallback
 
 # Data Loading and Preprocessing
 num_of_train_trail = 1
-num_of_train_data = 1000
+num_of_train_data = 10000
 train_df = pd.read_csv(f"data/train/trial_{num_of_train_trail}/train_{num_of_train_data}.csv")
 test_df = pd.read_csv("data/test/test_1000.csv")
 

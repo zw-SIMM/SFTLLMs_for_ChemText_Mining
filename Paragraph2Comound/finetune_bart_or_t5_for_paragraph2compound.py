@@ -1,6 +1,6 @@
 # Finetuning Bart or T5
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+os.environ["CUDA_VISIBLE_DEVICES"] = "3"
 import pandas as pd 
 import numpy as np
 import torch
@@ -25,17 +25,17 @@ class CFG:
     save_strategy = "epoch"
     evaluation_strategy = "epoch"
     interval_eval_epoch = 1                               # the number of interval epochs to evaluate (inference)
-    model_name = "t5-base"                                # "bart-base" or "t5-base"
+    model_name = "bart-base"                                # "bart-base" or "t5-base"
     pretrained_dir = "/home/zhangwei/pretrained_models/"  # Path of the pretrained model downloaded from Hugging Face
 
     # Trail Set
     num_of_train_trail = 1
-    num_of_train_data = 1000
+    num_of_train_data = 10000
     saved_models_dir = f"saved_models/{model_name}/trail_{num_of_train_trail}_train_{num_of_train_data}_{model_name}_lr_{learning_rate}_epoch_{num_train_epochs}_bs_{batch_size}_intervel_{interval_eval_epoch}/"
     output_dir = f"results/predictions/{saved_models_dir}"
 
     # Data Configuration
-    train_file = f"data/train/trail_{num_of_train_trail}/train_{num_of_train_data}.csv"
+    train_file = f"data/train/trial_{num_of_train_trail}/train_{num_of_train_data}.csv"
     test_file = "data/test/test_1000.csv"
     source_text_column = "Paragraph"
     target_text_column = "Compound"

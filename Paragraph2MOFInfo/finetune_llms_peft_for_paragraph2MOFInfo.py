@@ -59,7 +59,7 @@ gradient_accumulation_steps = 1     # Number of update steps to accumulate the g
 gradient_checkpointing = True       # Enable gradient checkpointing
 
 max_grad_norm = 0.3                 # Maximum gradient normal (gradient clipping)
-learning_rate = 1e-4                # Initial learning rate (AdamW optimizer)
+learning_rate = 1e-5                # Initial learning rate (AdamW optimizer)
 weight_decay = 0.001                # Weight decay to apply to all layers except bias/LayerNorm weights
 
 optim = "paged_adamw_32bit"         # Optimizer to use

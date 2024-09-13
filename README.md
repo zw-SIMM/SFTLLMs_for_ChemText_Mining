@@ -3,7 +3,7 @@
 ## Download
 ```bash
 git clone https://github.com/zw-SIMM/SFTLLMs_for_chemtext_mining
-cd SFTLLMs_for_chemtext_mining
+cd SFTLLMs_for_ChemText_Mining
 ```
 
 ## 🖊 Datasets and Codes
